@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        .form_box{
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            width: 30%;
+            background-color: rgb(83, 163, 216);
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        label{
+            font-size: 17px;
+            font-family: sans-serif ;
+            margin-top: 50px !important;
+        }
+        span{
+            color: red;
+        }
+        #age,#email, #pass, #url, #feed, #msg{
+            width: 97%;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+        .rating{
+            margin-bottom: 10px;
+        }
+        .rating input{
+            margin-right: 20px;
+        }
+        .btn{
+            text-align: center;
+        }
+        .btn button{
+            width: 30%;
+            padding: 8px;
+            margin-top: 20px;
+            background-color: green;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form_box" >
+
+        <form action="">        
+            <h1 style="text-align: center;">Feedback Form</h1>
+            <label for="feed">Feedback</label>
+            <select name="" id="feed">
+                <option value="">Excellent</option>
+                <option value="">Good</option>
+                <option value="">Bad</option>
+            </select>
+
+            <label for="msg">Message</label>
+            <textarea name="" id="msg" rows="4" ></textarea>
+
+            <div class="rating">
+                <label for="">Website Rating:</label>
+                <br>
+                <label for="l1">1</label>
+                <input type="radio" name="" id="l1">
+                <label for="l2">2</label>
+                <input type="radio" name="" id="l2">
+                <label for="l3">3</label>
+                <input type="radio" name="" id="l3">
+                <label for="l4">4</label>
+                <input type="radio" name="" id="l4">
+                <label for="l5">5</label>
+                <input type="radio" name="" id="l5">
+                
+            </div>
+
+            <label for="age">Age</label>
+            <input type="number" min="10" max="100" placeholder="age" id="age">
+
+            <label for="email">Email <span>*</span></label>
+            <input type="email" required placeholder="email" id="email">
+
+            <label for="pass">Password</label>
+            <input type="password" placeholder="Password should minimun 8 character" minlength="8" id ="pass">
+
+            <label for="url">Website URL</label>
+            <input type="text" id="url">
+            
+            
+            <input type="checkbox" name="" id="terms">
+            <label for="terms">Check terms and condition</label>
+            <br>
+            <div class="btn">
+                <button>Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
